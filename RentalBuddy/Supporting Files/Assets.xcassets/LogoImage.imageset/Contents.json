@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kouji-tsuru-E_4YfFdHvXg-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kouji-tsuru-E_4YfFdHvXg-unsplash@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kouji-tsuru-E_4YfFdHvXg-unsplash@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
