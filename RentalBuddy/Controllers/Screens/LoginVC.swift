@@ -20,6 +20,7 @@ class LoginVC: UIViewController {
     let padding: CGFloat = 50
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,7 +29,7 @@ class LoginVC: UIViewController {
         configureLogoImage()
         configureTextFields()
         createDismissKeyboardTapGesture()
-        configureButtons()
+        displayButtons()
     }
     
     
@@ -37,6 +38,23 @@ class LoginVC: UIViewController {
         usernameTextField.text = ""
         passwordTextField.text = ""
     }
+    
+    func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    
+    @objc func loginTapped(_ sender: UIButton) {
+        print("button tapped")
+
+        let homeVC = HomeVC()
+        let testVC = UINavigationController(rootViewController: homeVC)
+        
+        testVC.modalPresentationStyle = .fullScreen
+        present(testVC, animated: true, completion: nil)
+    }
+    
     
     
     func configureLoginImage(){
@@ -91,17 +109,16 @@ class LoginVC: UIViewController {
     }
     
     
-    func createDismissKeyboardTapGesture() {
-            let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
-            view.addGestureRecognizer(tap)
-        }
-    
     
 #warning ("add sign in w/apple ID as option")
 //https://help.apple.com/developer-account/?lang=en#/devde676e696
     
-    func configureButtons(){
+    func displayButtons(){
         view.addSubview(loginButton)
+        loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        
+        
+        
         view.addSubview(registerButton)
         
         NSLayoutConstraint.activate([
@@ -117,5 +134,3 @@ class LoginVC: UIViewController {
         ])
     }
 }
-
-
