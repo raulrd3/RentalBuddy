@@ -30,7 +30,7 @@
 		D8C182F927D298BD00E3451F /* RentalBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RentalBuddy.xcdatamodel; sourceTree = "<group>"; };
 		D8C182FB27D298C000E3451F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8C182FE27D298C000E3451F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D8C1830027D298C000E3451F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C1830027D298C000E3451F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		D8C1830627D2D01800E3451F /* SNTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTextField.swift; sourceTree = "<group>"; };
 		D8C1830827D2D9F500E3451F /* SNButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNButton.swift; sourceTree = "<group>"; };
 		D8C1830A27D2EB1000E3451F /* SNImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNImages.swift; sourceTree = "<group>"; };
@@ -72,6 +72,7 @@
 				D8C1830E27D2EDEB00E3451F /* Supporting Files */,
 				D8C182FD27D298C000E3451F /* LaunchScreen.storyboard */,
 				D8C182F827D298BD00E3451F /* RentalBuddy.xcdatamodeld */,
+				D8C1830027D298C000E3451F /* Info.plist */,
 			);
 			path = RentalBuddy;
 			sourceTree = "<group>";
@@ -95,7 +96,6 @@
 		D8C1830E27D2EDEB00E3451F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8C1830027D298C000E3451F /* Info.plist */,
 				D8C182FB27D298C000E3451F /* Assets.xcassets */,
 				D8C182EF27D298BD00E3451F /* AppDelegate.swift */,
 				D8C182F127D298BD00E3451F /* SceneDelegate.swift */,
@@ -351,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M73G528T92;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RentalBuddy/Supporting Files/Info.plist";
+				INFOPLIST_FILE = RentalBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -378,7 +378,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M73G528T92;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RentalBuddy/Supporting Files/Info.plist";
+				INFOPLIST_FILE = RentalBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

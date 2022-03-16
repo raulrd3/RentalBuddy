@@ -9,12 +9,12 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    let logoImageView = UIImageView()
+//    let logoImageView = UIImageView()
     let loginImageView = UIImageView()
     let usernameTextField = SNTextField()
     let passwordTextField = SNTextField()
-    let loginButton = SNButton(backgroundColor: .systemGreen, title: "Login", systemImageName: "chevron.right")
-    let registerButton = SNButton(backgroundColor: .systemPurple, title: "Register", systemImageName: "envelope.fill")
+    let loginButton = SNButton(backgroundColor: .systemGreen, title: "Login", systemImageName: "key.fill")
+    let registerButton = SNButton(backgroundColor: .systemPurple, title: "Guest", systemImageName: "person.fill")
     
     let height: CGFloat = 40.0
     let padding: CGFloat = 50
@@ -26,7 +26,7 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .green
         configureLoginImage()
-        configureLogoImage()
+//        configureLogoImage()
         configureTextFields()
         createDismissKeyboardTapGesture()
         displayButtons()
@@ -71,20 +71,20 @@ class LoginVC: UIViewController {
         ])
     }
     
-    #warning("update logo")
-    func configureLogoImage() {
-        logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.image = UIImage(named: SNImages.logoImage.rawValue)
-        
-        view.addSubview(logoImageView)
-        
-        NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 85),
-            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoImageView.widthAnchor.constraint(equalToConstant: 100),
-            logoImageView.heightAnchor.constraint(equalToConstant: 100)
-        ])
-    }
+
+//    func configureLogoImage() {
+//        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+//        logoImageView.image = UIImage(named: SNImages.logoImage.rawValue)
+//
+//        view.addSubview(logoImageView)
+//
+//        NSLayoutConstraint.activate([
+//            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 85),
+//            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            logoImageView.widthAnchor.constraint(equalToConstant: 100),
+//            logoImageView.heightAnchor.constraint(equalToConstant: 100)
+//        ])
+//    }
     
     
     func configureTextFields() {

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "kouji-tsuru-E_4YfFdHvXg-unsplash.jpg",
+      "filename" : "RBlogo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "kouji-tsuru-E_4YfFdHvXg-unsplash@2x.jpg",
+      "filename" : "RBlogo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "kouji-tsuru-E_4YfFdHvXg-unsplash@3x.jpg",
+      "filename" : "RBlogo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
